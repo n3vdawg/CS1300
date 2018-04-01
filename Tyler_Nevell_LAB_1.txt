@@ -1,0 +1,50 @@
+# Tyler Nevell
+# 101039497
+# Lab 1
+# Gabe Johnson
+
+# Setting up an algorithm
+
+# What do we need to know?
+
+# 1. The cost of the pizza 
+# 2. The value of the bill in cash we will use for payment
+# 3. Do we have enough cash?
+# 4. If we do, how do we compute the value of the change after paying?
+
+# Get the cost for one pizza
+# Get the bill value
+# If the cash value is bigger than the cost, then calculate the change and display it.
+
+# BEGIN PSEUDOCODE 
+
+# get inputs for all relevant costs and prices
+get price1
+get price2
+get cash1
+get cash2 
+get cash3
+
+# add total price
+total price = price1 + price2
+
+# find average cost per person
+avgcost = total price / 3
+
+# add total cash
+total cash = cash1 + cash2 + cash3
+
+# compare each cash amount to avgcost
+if cash# == avgcost
+	output("thank you")
+if cash# < avgcost
+	output("not enough money")
+if cash# > avgcost
+	change = cash# - avgcost
+	output (change)
+end program
+
+
+
+
+	

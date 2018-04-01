@@ -1,0 +1,63 @@
+# Tyler Nevell
+# 101039497
+# HW 1
+# Gabe Johnson
+
+# With help from Gabe Johnson's office hours and student answers on piazza
+
+# Algorithm:
+
+# Move Picobot to the northern most corner. 
+# Once reached, move picobot south once, and then sweep west and east all the way to the edges.
+# Then move down south once and sweep west and east again. 
+# Repeat until picobot has reach the southern most corner.
+
+#CODE:
+
+# state 0 with nothing N; N one step
+0 x*** -> N 0
+
+# state 0 with something NE; W one step
+0 NEx* -> W 0 
+
+# state 0 with something NW; E one step
+0 NxW* -> E 0
+
+# state 0 with something NEW; S one step + into st 1
+0 NEWx -> S 1
+
+# state 1 with XXXX; E one step 
+1 xxxx -> E 1
+
+# state 1 with *Exx; W one step + into st 2
+1 *Exx -> W 2
+
+# state 2 with XXXX; W one step
+2 xxxx -> W 2
+
+# state 2 with NxWx; S one step + into st 1
+2 NxWx -> S 1
+
+# state 1 with NExS; W one step + into st 3
+1 NExS -> W 2
+
+# state 2 with NxWS; E one step
+2 NxWS -> E 3
+
+# state 3 with xxxx; S one step
+3 xxxx -> S 3
+
+# state 3 with xxWS; W one step + into st 1
+3 xxWS -> E 1
+
+# state 1 xExS; W one step
+1 xExS -> W 3
+
+# state 3 xExS; W one step + into st 3
+3 xExS -> W 4
+
+# state 4 xxxx; W one step
+4 xxxx -> W 4
+
+# state 4 xxWS; E one step + into st 1
+4 xxWS -> E 1
