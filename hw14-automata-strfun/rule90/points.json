@@ -1,0 +1,9 @@
+{
+    "points": [
+        { "prev": 3 },
+        { "next": 3 },
+        { "neighborhood": 4 },
+        { "rule90": 4 },
+        { "generation": 6 }
+    ]
+}

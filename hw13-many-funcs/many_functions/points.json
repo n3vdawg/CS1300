@@ -1,0 +1,13 @@
+{
+    "points": [
+        { "echo": 1 },
+        { "add_four" : 1 },
+        { "count_odds": 2 },
+        { "is_prime": 4 },
+        { "quadratic": 3 },
+        { "ftol": 3 },
+        { "bleep": 2 },
+        { "blop" : 2 },
+        { "bleebleblam" : 2}
+    ]
+}
