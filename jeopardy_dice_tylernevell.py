@@ -1,5 +1,4 @@
 # Tyler Nevell
-# Helper: Stephen Kay
 #HW 6, Jeopardy Dice
 
 
